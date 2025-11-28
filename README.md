@@ -40,6 +40,31 @@ Activate with: source py39/bin/activate
 
 (py39) ➜  core-python git:(develop) ✗ 
 
+# add and install a runtime package (writes/updates `uv.lock`)
+uv add requests
+# specify a version
+uv add requests==2.31.0
+
+# add a dev dependency
+uv add pytest --dev
+
+# install all packages from `uv.lock`
+uv install
+
+# remove a package
+uv remove requests
+
+# upgrade a package
+uv upgrade requests
+
+# IMPORTANT:
+# If you use uv commands that manage packages (for example uv add, uv remove, uv upgrade)
+# they update uv.lock automatically and install into the venv. 
+# If you install with pip directly, uv.lock will not be updated
+# — run 
+uv sync 
+# to reconcile the lockfile and environment.
+
 ````
 
 ## Code
