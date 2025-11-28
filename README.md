@@ -6,14 +6,29 @@ The Project uses uv to run python scripts in a lightweight container.
 ## Deactivate the currently active environment
 # before running uv commands so that uv can create
 # and use its own .venv environment cleanly:
-(venv) ➜  core-python git:(refactor/rbhatn1/11272025) ✗ deactivate
+(venv) ➜  core-python git:(develop) ✗ deactivate
 
 # IDE currently has a different active venv 
 # (like PyCharm's default), uv detects a mismatch 
 # and issues this warning.
 
-➜  core-python git:(refactor/rbhatn1/11272025) ✗ uv run main.py
+➜  core-python git:(develop) ✗ uv run main.py
 Hello from core-python!
+
+## Create a new virtual environment with uv
+➜  core-python git:(develop) ✗ uv venv py39
+
+Using CPython 3.9.6 interpreter at: /Library/Developer/CommandLineTools/usr/bin/python3
+Creating virtual environment at: py39
+Activate with: source py39/bin/activate
+
+## Activate the created virtual environment via uv
+➜  core-python git:(develop) ✗ source py39/bin/activate 
+(py39) ➜  core-python git:(develop) ✗ echo $PATH
+/Users/chukku/pycharmProjects/core-python/py39/bin:<OTHER_PATHS>
+
+(py39) ➜  core-python git:(develop) ✗ 
+
 
 
 ````
