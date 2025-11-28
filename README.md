@@ -2,7 +2,7 @@
 
 ## Read
 - https://www.python.org
-- Python Package Index - https://pypi.org/
+- Python Package Index - https://pypi.org/ (Official 3rd party python packages repository)
 
 ## Tools
 - https://docs.astral.sh/uv/ - Github Repo (https://github.com/astral-sh/uv)
