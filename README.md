@@ -86,6 +86,12 @@ uv sync
 
 (.venv) ➜  core-python git:(develop) ✗ uv run pip freeze > requirements.txt
 
+#List available jupyter themes
+(.venv) ➜  core-python git:(develop) ✗ jt -l
+
+# Select the Dark theme
+(.venv) ➜  core-python git:(develop) ✗ jt -t onedork
+
 ````
 
 ## Code
