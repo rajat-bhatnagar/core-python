@@ -74,7 +74,7 @@ uv sync
 
 ➜  core-python git:(develop) ✗ source .venv/bin/activate
 
-(.venv) ➜  core-python git:(develop) ✗ uv add notebook pytz python-dateutil requests openpyxl xlrd pip
+(.venv) ➜  core-python git:(develop) ✗ uv add notebook pytz python-dateutil requests openpyxl xlrd pip jupyterthemes
 #warning: `VIRTUAL_ENV=.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 #Using CPython 3.9.6 interpreter at: /Library/Developer/CommandLineTools/usr/bin/python3
 #Creating virtual environment at: .venv
