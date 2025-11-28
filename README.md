@@ -65,6 +65,23 @@ uv upgrade requests
 uv sync 
 # to reconcile the lockfile and environment.
 
+
+# Added additional packages 
+
+➜  core-python git:(develop) ✗ uv venv .venv
+#Using CPython 3.9.6 interpreter at: /Library/Developer/CommandLineTools/usr/bin/python3
+#Creating virtual environment at: py39
+
+➜  core-python git:(develop) ✗ source py39/bin/activate
+
+(py39) ➜  core-python git:(develop) ✗ uv add notebook pytz python-dateutil requests openpyxl xlrd
+#warning: `VIRTUAL_ENV=py39` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+#Using CPython 3.9.6 interpreter at: /Library/Developer/CommandLineTools/usr/bin/python3
+#Creating virtual environment at: .venv
+#Resolved 116 packages in 682ms
+#Prepared 101 packages in 3.08s
+#Installed 102 packages in 237ms
+
 ````
 
 ## Code

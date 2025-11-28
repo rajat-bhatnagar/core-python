@@ -4,4 +4,11 @@ version = "0.1.0"
 description = "core-python project"
 readme = "README.md"
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "notebook>=7.5.0",
+    "openpyxl>=3.1.5",
+    "python-dateutil>=2.9.0.post0",
+    "pytz>=2025.2",
+    "requests>=2.32.5",
+    "xlrd>=2.0.2",
+]
