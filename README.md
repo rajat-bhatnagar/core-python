@@ -27,18 +27,18 @@ The Project uses uv to run python code.
 Hello from core-python!
 
 ## Create a new virtual environment with uv
-➜  core-python git:(develop) ✗ uv venv py39
+➜  core-python git:(develop) ✗ uv venv .venv
 
 Using CPython 3.9.6 interpreter at: /Library/Developer/CommandLineTools/usr/bin/python3
-Creating virtual environment at: py39
-Activate with: source py39/bin/activate
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
 
 ## Activate the created virtual environment via uv
-➜  core-python git:(develop) ✗ source py39/bin/activate 
-(py39) ➜  core-python git:(develop) ✗ echo $PATH
-/Users/chukku/pycharmProjects/core-python/py39/bin:<OTHER_PATHS>
+➜  core-python git:(develop) ✗ source .venv/bin/activate 
+(.venv) ➜  core-python git:(develop) ✗ echo $PATH
+/Users/chukku/pycharmProjects/core-python/.venv/bin:<OTHER_PATHS>
 
-(py39) ➜  core-python git:(develop) ✗ 
+(.venv) ➜  core-python git:(develop) ✗ 
 
 # add and install a runtime package (writes/updates `uv.lock`)
 uv add requests
@@ -70,17 +70,21 @@ uv sync
 
 ➜  core-python git:(develop) ✗ uv venv .venv
 #Using CPython 3.9.6 interpreter at: /Library/Developer/CommandLineTools/usr/bin/python3
-#Creating virtual environment at: py39
+#Creating virtual environment at: .venv
 
-➜  core-python git:(develop) ✗ source py39/bin/activate
+➜  core-python git:(develop) ✗ source .venv/bin/activate
 
-(py39) ➜  core-python git:(develop) ✗ uv add notebook pytz python-dateutil requests openpyxl xlrd
-#warning: `VIRTUAL_ENV=py39` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+(.venv) ➜  core-python git:(develop) ✗ uv add notebook pytz python-dateutil requests openpyxl xlrd pip
+#warning: `VIRTUAL_ENV=.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
 #Using CPython 3.9.6 interpreter at: /Library/Developer/CommandLineTools/usr/bin/python3
 #Creating virtual environment at: .venv
 #Resolved 116 packages in 682ms
 #Prepared 101 packages in 3.08s
 #Installed 102 packages in 237ms
+
+# Generated the requirements.txt file using uv
+
+(.venv) ➜  core-python git:(develop) ✗ uv run pip freeze > requirements.txt
 
 ````
 
