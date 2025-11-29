@@ -26,3 +26,10 @@ to reduce ambiguity or variation
 ## Jupyter Notebooks
 Jupyter Notebooks are a browser based REPL (Read-Eval-Print Loop) environment that allows you to create and share documents that 
 contain live code, equations, visualizations, and narrative text. ( usually .ipynb extension )
+
+```bash
+# Launch Jupyter Notebook
+(.venv) ➜  core-python git:(develop) ✗ jupyter notebook .
+
+
+```
