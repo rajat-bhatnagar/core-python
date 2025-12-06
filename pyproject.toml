@@ -5,6 +5,8 @@ description = "core-python project"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
+    "ipykernel>=6.31.0",
+    "jupyter>=1.1.1",
     "jupyterthemes>=0.20.0",
     "notebook>=7.5.0",
     "openpyxl>=3.1.5",

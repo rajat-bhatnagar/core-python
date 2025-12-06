@@ -31,5 +31,20 @@ contain live code, equations, visualizations, and narrative text. ( usually .ipy
 # Launch Jupyter Notebook
 (.venv) ➜  core-python git:(develop) ✗ jupyter notebook .
 
+# Added in IntelliJ to make jupyter notebook work
+uv add jupyter ipykernel
 
+# in IntelliJ / PyCharm: 
+# Open Preferences → Project → Python Interpreter and select ./.venv/bin/python. 
+# Restart the IDE if needed.
+# Change this in Preferences
 ```
+
+## Mutability and Immutability
+
+- An Object is mutable if its state or content can be changed after it is created.
+  - one or more data attributes can be modified/ changed.
+
+- An Object is immutable if its state or content cannot be changed after it is created.
+  - The state of the object is set in stone.
+
