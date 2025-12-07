@@ -4,6 +4,7 @@
 - https://www.python.org
 - Python Package Index - https://pypi.org/ (Official 3rd party python packages repository)
 - PEP Style guide - https://peps.python.org
+- Python Operator Precedence - https://docs.python.org/3/reference/expressions.html#operator-precedence
 
 ## Tools
 - https://docs.astral.sh/uv/ - Github Repo (https://github.com/astral-sh/uv)
